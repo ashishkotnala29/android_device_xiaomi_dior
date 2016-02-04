@@ -106,6 +106,14 @@ static char *camera_fixup_getparams(int id __attribute__((unused)),
     params.dump();
 #endif
 
+
+    /* Remove HDR mode in front camera */
+    if (id == 1) {
+        params.set(android::CameraParameters::KEY_SUPPORTED_SCENE_MODES,
+            "auto,asd,landscape,snow,beach,sunset,night,portrait,backlight,sports,steadyphoto,flowers,candlelight,fireworks,party,night-portrait,theatre,action,AR");
+    }
+
+
 #if !LOG_NDEBUG
     ALOGV("%s: Fixed parameters:", __FUNCTION__);
     params.dump();
