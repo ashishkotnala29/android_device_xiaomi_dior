@@ -15,11 +15,13 @@ use.voice.path.for.pcm.voip=true
 # Display
 ro.opengles.version=196608
 ro.sf.lcd_density=320
+<<<<<<< HEAD
 debug.sf.hw=1
 debug.egl.hw=1
 debug.composition.type=c2d
+=======
+>>>>>>> 496f6f9... Clean display related debug props
 persist.hwc.mdpcomp.enable=true
-debug.mdpcomp.logs=0
 
 # Gps Smart Battery Savings (depends on sensor hub)
 persist.mot.gps.smart_battery=1
