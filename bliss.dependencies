@@ -1,0 +1,20 @@
+[
+    {
+        "remote": "sinisa94",
+        "repository": "android_device_xiaomi_dior",
+        "target_path": "device/xiaomi/dior",
+        "revision": "mm6.0"
+    },
+    {
+        "remote": "sinisa94",
+        "repository": "android_kernel_xiaomi_dior",
+        "target_path": "kernel/xiaomi/dior",
+        "revision": "mm6.0"
+    },
+    {
+        "remote": "cm",
+        "repository": "android_device_qcom_common",
+        "target_path": "device/qcom/common",
+        "revision": "cm-13.0"
+    }
+]

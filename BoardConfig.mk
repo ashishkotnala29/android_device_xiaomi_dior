@@ -190,3 +190,18 @@ TARGET_PROVIDES_WCNSS_QMI := true
 
 # inherit from the proprietary version
 -include vendor/xiaomi/dior/BoardConfigVendor.mk
+
+# Bliss Configs
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.9-linaro
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := false
+BLISS_GRAPHITE := true
+BLISS_KRAIT := false
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+# SaberMod
+# -include vendor/bliss/config/sm.mk
