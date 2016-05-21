@@ -9,7 +9,7 @@
         "remote": "sinisa94",
         "repository": "android_kernel_xiaomi_dior",
         "target_path": "kernel/xiaomi/dior",
-        "revision": "mm6.0"
+        "revision": "marshmallow"
     },
     {
         "remote": "cm",
