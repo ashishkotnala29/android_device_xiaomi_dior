@@ -17,4 +17,9 @@
         "target_path": "device/qcom/common",
         "revision": "cm-13.0"
     }
+    {
+    "repository"  : "sonyxperiadev/boringssl-compat",
+    "target_path" : "external/sony/boringssl-compat",
+    "branch"      : "master"
+  }
 ]
