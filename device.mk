@@ -115,12 +115,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8226
 
-# Optional CM packages
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers
-
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     7z \
