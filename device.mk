@@ -68,7 +68,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
 PRODUCT_PACKAGES += \
-    Screencast \
     libxml2 \
     camera.msm8226 \
     libboringssl-compat
@@ -111,25 +110,6 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8226
-
-# Optional CM packages
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers
-
-# Extra tools in CM
-PRODUCT_PACKAGES += \
-    7z \
-    bash \
-    bzip2 \
-    curl \
-    powertop \
-    unrar \
-    unzip \
-    vim \
-    wget \
-    zip
 
 # IPC router
 PRODUCT_COPY_FILES += \
