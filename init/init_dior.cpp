@@ -42,22 +42,22 @@ void vendor_load_properties()
     char modem[PROP_VALUE_MAX];
     int rc;
 
-    rc = property_get("ro.board.platform", platform);
+    rc = property_get("$platform", platform);
     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
         return;
 
-    property_get("ro.boot.modem", modem);
+    property_get("$modem", modem);
 
     if (strstr(modem, "LTEW")) {
-        property_set("ro.product.model", "HM NOTE 1LTE");
+        property_set("$model", "HM NOTE 1LTE");
     }
 
     else if (strstr(modem, "LTETD")) {
-        property_set("ro.product.model", "HM NOTE 1LTE TD");
+        property_set("$model", "HM NOTE 1LTE TD");
     }
 
-    property_set("ro.product.device", "dior");
-    property_set("ro.build.product", "dior");
-    property_set("ro.build.description", "dior-user 4.4.4 KTU84P V7.3.1.0.KHIMIDD release-keys");
-    property_set("ro.build.fingerprint", "Xiaomi/dior/dior:4.4.4/KTU84P/V7.3.1.0.KHIMIDD:user/release-keys");
+    property_set("$device", "dior");
+    property_set("$product", "dior");
+    property_set("$description", "dior-user 4.4.4 KTU84P V7.3.1.0.KHIMIDD release-keys");
+    property_set("$fingerprint", "Xiaomi/dior/dior:4.4.4/KTU84P/V7.3.1.0.KHIMIDD:user/release-keys");
 }
