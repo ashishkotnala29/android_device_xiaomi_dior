@@ -68,9 +68,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
 PRODUCT_PACKAGES += \
-    libxml2 \
     camera.msm8226 \
-    libboringssl-compat
+    libxml2
 
 # Charger
 PRODUCT_COPY_FILES += \
