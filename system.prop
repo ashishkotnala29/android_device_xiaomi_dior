@@ -1,3 +1,10 @@
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon 400 MSM8928
+ro.device.cpu=1.6GHz Quad-Core ARM Cortex-A7
+ro.device.gpu=Qualcomm Adreno 305
+ro.device.rear_cam=13 MP
+ro.device.front_cam=5 MP
+ro.device.screen_res=1280 x 720 IPS LCD
 
 # Audio
 ro.qc.sdk.audio.ssr=false
