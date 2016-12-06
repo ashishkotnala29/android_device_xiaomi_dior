@@ -5,9 +5,9 @@
 	"branch": "cm-14.1"
   },
   {
-	"repository": "AICP/proprietary_vendor_xiaomi",
+	"repository": "ashishkotnala29/proprietary_vendor_xiaomi",
 	"target_path": "vendor/xiaomi",
-	"branch": "n7.1"
+	"branch": "cm-14.1"
   },
   {
 	"repository": "CyanogenMod/android_device_qcom_common",
