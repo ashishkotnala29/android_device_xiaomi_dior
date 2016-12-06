@@ -1,0 +1,20 @@
+[
+  {
+	"repository": "ashishkotnala29/android_kernel_xiaomi_dior",
+	"target_path": "kernel/xiaomi/dior",
+	"remote": "github",
+	"branch": "cm-14.1"
+  },
+  {
+	"repository": "ashishkotnala29/proprietary_vendor_xiaomi",
+	"target_path": "vendor/xiaomi",
+	"remote": "github",
+	"branch": "cm-14.1"
+  },
+  {
+	"repository": "TheMuppets/proprietary_vendor_qcom_binaries",
+	"target_path": "vendor/qcom/binaries",
+	"remote": "github",
+	"branch": "cm-14.1"
+  }
+]

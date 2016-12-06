@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,11 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/dior/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/dior/dior-vendor.mk)
 
-# Inherit some common CM stuff (full)
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Product configuration
-PRODUCT_NAME := cm_dior
+PRODUCT_NAME := aosp_dior
 PRODUCT_DEVICE := dior
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi

@@ -74,8 +74,8 @@ PRODUCT_PACKAGES += \
     camera.msm8226
 
 #CMActions
-PRODUCT_PACKAGES += \
-    CMActions
+#PRODUCT_PACKAGES += \
+#    CMActions
 
 # Connectivity
 PRODUCT_PACKAGES += \
@@ -88,10 +88,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8226 \
     memtrack.msm8226 \
     liboverlay
-
-# DRM
-PRODUCT_PACKAGES += \
-    libshims_wvm
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
