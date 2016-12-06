@@ -40,4 +40,3 @@ public class GesturePreferenceActivity extends PreferenceActivity {
         return false;
     }
 }
-
