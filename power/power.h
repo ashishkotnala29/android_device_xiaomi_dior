@@ -32,7 +32,7 @@ typedef struct governor_settings {
     int hispeed_freq_off;
     int io_is_busy;
     int min_sample_time;
-    int sampling_down_factor;
+    int max_freq_hysteresis;
     char *target_loads;
     char *target_loads_off;
     int scaling_max_freq;
@@ -50,7 +50,7 @@ static power_profile profiles[PROFILE_MAX] = {
         .hispeed_freq_off = 787200,
         .io_is_busy = 0,
         .min_sample_time = 60000,
-        .sampling_down_factor = 100000,
+        .max_freq_hysteresis = 100000,
         .target_loads = "95",
         .target_loads_off = "95",
         .scaling_max_freq = 787200,
@@ -66,7 +66,7 @@ static power_profile profiles[PROFILE_MAX] = {
         .hispeed_freq_off = 787200,
         .io_is_busy = 1,
         .min_sample_time = 60000,
-        .sampling_down_factor = 100000,
+        .max_freq_hysteresis = 100000,
         .target_loads = "80 998400:90 1401600:99",
         .target_loads_off = "95 1401600:99",
         .scaling_max_freq = 1401600,
@@ -84,7 +84,7 @@ static power_profile profiles[PROFILE_MAX] = {
         .hispeed_freq_off = 998400,
         .io_is_busy = 1,
         .min_sample_time = 60000,
-        .sampling_down_factor = 100000,
+        .max_freq_hysteresis = 100000,
         .target_loads = "80",
         .target_loads_off = "80",
         .scaling_max_freq = 1593600,
@@ -100,7 +100,7 @@ static power_profile profiles[PROFILE_MAX] = {
         .hispeed_freq_off = 787200,
         .io_is_busy = 0,
         .min_sample_time = 60000,
-        .sampling_down_factor = 100000,
+        .max_freq_hysteresis = 100000,
         .target_loads = "90",
         .target_loads_off = "95",
         .scaling_max_freq = 1190400,

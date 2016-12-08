@@ -141,8 +141,8 @@ static void set_power_profile(int profile)
                     profiles[profile].io_is_busy);
     sysfs_write_int(INTERACTIVE_PATH "min_sample_time",
                     profiles[profile].min_sample_time);
-    sysfs_write_int(INTERACTIVE_PATH "sampling_down_factor",
-                    profiles[profile].sampling_down_factor);
+    sysfs_write_int(INTERACTIVE_PATH "max_freq_hysteresis",
+                    profiles[profile].max_freq_hysteresis);
     sysfs_write_str(INTERACTIVE_PATH "target_loads",
                     profiles[profile].target_loads);
     sysfs_write_int(CPUFREQ_PATH "scaling_max_freq",
