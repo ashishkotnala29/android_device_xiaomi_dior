@@ -10,7 +10,7 @@
 	"branch": "cm-14.1"
   },
   {
-	"repository": "CyanogenMod/android_device_qcom_common",
+	"repository": "LineageOS/android_device_qcom_common",
 	"target_path": "device/qcom/common",
 	"branch": "cm-14.1"
   },
@@ -20,7 +20,7 @@
 	"branch": "cm-14.1"
   },
   {
-	"repository": "CyanogenMod/android_packages_resources_devicesettings",
+	"repository": "LineageOS/android_packages_resources_devicesettings",
 	"target_path": "packages/resources/devicesettings",
 	"branch": "cm-14.1"
   }
