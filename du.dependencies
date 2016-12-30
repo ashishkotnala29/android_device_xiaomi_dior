@@ -1,0 +1,62 @@
+[
+  {
+    "repository": "LineageOS/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8974",
+    "branch": "cm-14.1-caf-8974"
+  },
+  {
+    "repository": "LineageOS/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8974",
+    "branch": "cm-14.1-caf-8974"
+  },
+  {
+    "repository":   "LineageOS/android_hardware_qcom_media",
+    "target_path":  "hardware/qcom/media-caf/msm8974",
+    "branch": "cm-14.1-caf-8974"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_system_qcom",
+    "target_path":  "system/qcom",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_hardware_qcom_fm",
+    "target_path":  "hardware/qcom/fm",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_packages_apps_FMRadio",
+    "target_path":  "packages/apps/FMRadio",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_external_ant-wireless_antradio-library",
+    "target_path":  "external/ant-wireless/antradio-library",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_external_ant-wireless_ant_service",
+    "target_path":  "external/ant-wireless/ant/service",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_external_ant-wireless_ant_native",
+    "target_path":  "external/ant-wireless/ant/native",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_external_bson",
+    "target_path":  "external/bson",
+    "branch":       "n7x-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_external_connectivity",
+    "target_path":  "external/connectivity",
+    "branch":       "n-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_vendor_qcom_binaries",
+    "target_path":  "vendor/qcom/binaries",
+    "branch":       "n7x-caf"
+  }
+]

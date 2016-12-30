@@ -73,14 +73,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     camera.msm8226
 
-#CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
-# CMFileManager
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/CMFileManager.apk:system/app/CMFileManager/CMFileManager.apk
-
 # Connectivity
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
