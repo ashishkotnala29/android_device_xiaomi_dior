@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# FileManager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/EsExplorer.apk:system/app/EsExplorer/EsExplorer.apk
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
