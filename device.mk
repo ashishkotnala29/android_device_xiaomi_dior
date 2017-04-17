@@ -279,3 +279,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LTE, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.get_imsi_from_sim=true
+
+PRODUCT_PROPERTY_OVERRIDES +=\
+    ro.product.device=dior \
+    ro.product.model=HM NOTE 1LTE
