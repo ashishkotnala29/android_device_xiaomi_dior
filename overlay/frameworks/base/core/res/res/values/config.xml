@@ -165,7 +165,7 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!-- bool name="config_intrusiveBatteryLed">true</bool -->
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -259,10 +259,10 @@
         <item>0</item>
     </integer-array>
 
-    <integer name="config_buttonBrightnessSettingDefault">85</integer>
+    <!-- integer name="config_buttonBrightnessSettingDefault">85</integer -->
 
     <!-- Comment out this line for now since it seems button brightness is not adjustible-->
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+    <!-- bool name="config_deviceHasVariableButtonBrightness">true</bool -->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -286,7 +286,7 @@
          This needs to match the constants in
          services/core/java/com/android/server/policy/policy/impl/PhoneWindowManager.java
     -->
-    <integer name="config_longPressOnAppSwitchBehavior">1</integer>
+    <!-- integer name="config_longPressOnAppSwitchBehavior">1</integer -->
 
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -300,7 +300,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+    <!-- integer name="config_deviceHardwareKeys">83</integer -->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -314,7 +314,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+    <!-- integer name="config_deviceHardwareWakeKeys">64</integer -->
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
@@ -389,9 +389,9 @@
 
     <!-- Support in Surfaceflinger for blur layers.
          NOTE: This requires additional hardware-specific code. -->
-    <bool name="config_uiBlurEnabled">true</bool>
+    <!-- bool name="config_uiBlurEnabled">true</bool -->
 
     <!-- Whether to enable HumanInteractionController by default -->
-    <bool name="config_HICEnabledDefault">false</bool>
+    <!-- bool name="config_HICEnabledDefault">false</bool -->
 
 </resources>

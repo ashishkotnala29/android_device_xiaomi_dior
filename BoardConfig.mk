@@ -51,6 +51,9 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Cryptfs
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -111,7 +114,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_dior
 TARGET_UNIFIED_DEVICE := true
 
 # Kernel
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/dior
 TARGET_KERNEL_CONFIG := dior_custom_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=dior zcache.enabled=1 user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
@@ -130,7 +132,7 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 BOARD_GLOBAL_CFLAGS += -DMETADATA_CAMERA_SOURCE
 
 # Lights
-TARGET_PROVIDES_LIBLIGHT := true
+#TARGET_PROVIDES_LIBLIGHT := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -142,9 +144,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+#-include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true

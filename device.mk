@@ -14,6 +14,15 @@
 # limitations under the License.
 #
 
+# AOSP Prebuilt Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+  LOCAL_KERNEL := device/xiaomi/dior/Image.gz-dtb
+else
+  LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+PRODUCT_COPY_FILES := \
+    $(LOCAL_KERNEL):kernel
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
@@ -71,13 +80,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     libxml2 \
     camera.msm8226
-
-#CMActions
-PRODUCT_PACKAGES += \
-    CMActions
 
 # Connectivity
 PRODUCT_PACKAGES += \
@@ -279,3 +283,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LTE, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.get_imsi_from_sim=true
+
+# WFD
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
