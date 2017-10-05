@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# nasty build error:
+ $(shell mkdir -p ../../../out/target/product/fx3q/obj/SHARED_LIBRARIES/libqdutils_intermediates/)
+ $(shell touch ../../../out/target/product/fx3q/obj/SHARED_LIBRARIES/libqdutils_intermediates/import_includes)
+ $(shell touch ./out/target/product/fx3q/obj/SHARED_LIBRARIES/libqdutils_intermediates/export_includes)
+
 LOCAL_PATH := device/xiaomi/dior
 
 # ANT+
