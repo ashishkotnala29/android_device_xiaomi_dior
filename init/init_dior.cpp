@@ -31,10 +31,11 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <android-base/properties.h>
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+
+using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[])
 {
@@ -49,11 +50,11 @@ void property_override(char const prop[], char const value[])
 
 void vendor_load_properties()
 {
-    std::string platform = property_get("ro.board.platform");
+    std::string platform = GetProperty("ro.board.platform", "");
     if (platform != ANDROID_TARGET)
         return;
 
-    std::string modem = property_get("ro.boot.modem");
+    std::string modem = GetProperty("ro.boot.modem", "");
 
     if (modem == "LTEW") {
         property_override("ro.product.model", "HM NOTE 1LTE");
