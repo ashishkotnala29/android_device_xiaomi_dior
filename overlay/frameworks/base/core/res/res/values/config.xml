@@ -391,7 +391,4 @@
          NOTE: This requires additional hardware-specific code. -->
     <bool name="config_uiBlurEnabled">true</bool>
 
-    <!-- Whether to enable HumanInteractionController by default -->
-    <bool name="config_HICEnabledDefault">false</bool>
-
 </resources>
