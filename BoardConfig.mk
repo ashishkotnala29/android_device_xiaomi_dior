@@ -102,9 +102,6 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 # No old RPC for prop
 TARGET_NO_RPC := true
 
-# Headers
-TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/dior/include
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_dior
 TARGET_RECOVERY_DEVICE_MODULES := libinit_dior
