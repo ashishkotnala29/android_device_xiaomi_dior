@@ -78,6 +78,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     Snap \
     libxml2 \
     camera.msm8226
@@ -105,7 +107,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    libshims_wvm
+    libshims_wvm \
+    android.hardware.drm@1.0-impl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
@@ -120,6 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -270,6 +277,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
@@ -289,6 +300,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     wificond \
+    wifilogd \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
