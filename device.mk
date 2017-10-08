@@ -192,7 +192,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
+    media.stagefright.less-secure=true \
+    persist.media.treble_omx=false
 
 # Permissions
 PRODUCT_COPY_FILES += \
