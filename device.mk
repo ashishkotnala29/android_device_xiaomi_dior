@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    libbt-vendor \
     bdaddr_xiaomi \
     init.qcom.fm.sh
 
