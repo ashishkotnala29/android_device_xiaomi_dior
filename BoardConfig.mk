@@ -108,7 +108,6 @@ TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/dior/include
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_dior
 TARGET_RECOVERY_DEVICE_MODULES := libinit_dior
-TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
